@@ -7,7 +7,7 @@
 
 
 // Blinking rate in milliseconds
-#define BLINKING_RATE     500ms
+#define BLINKING_RATE     1000ms
 
 
 int main()
@@ -22,5 +22,6 @@ int main()
     while (true) {
         led = !led;
         ThisThread::sleep_for(BLINKING_RATE);
+        printf("Test\r\n");
     }
 }
